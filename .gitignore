@@ -3,3 +3,6 @@ node_modules
 
 # playground
 sandbox
+
+# DC_Store
+.DS_Store
