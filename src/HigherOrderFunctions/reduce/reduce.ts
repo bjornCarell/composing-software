@@ -1,4 +1,4 @@
-export const reduce = <T>(
+export const reduce = <T,>(
   reducer: (acc: T, curr: T) => T,
   initial: T,
   arr: T[]
