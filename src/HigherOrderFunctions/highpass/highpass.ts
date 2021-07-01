@@ -1,0 +1,1 @@
+export const highpass = (cutoff: number) => (n: number) => n >= cutoff;
