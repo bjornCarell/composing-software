@@ -7,4 +7,13 @@ describe('add curried function', () => {
 
     expect(actual).toEqual(expected);
   });
+
+  it('should add 10 to any number', () => {
+    const inc10 = add(10);
+
+    const expected = 25;
+    const actual = inc10(15);
+
+    expect(actual).toEqual(expected);
+  })
 });
