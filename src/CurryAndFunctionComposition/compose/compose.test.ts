@@ -2,12 +2,12 @@ import { compose } from './compose';
 
 describe('compose function', () => {
   it('should take two functions as parameters, compose them, and return a number', () => {
-    const g = (n: number) => n + 1;
-    const f = (n: number) => n * 2;
-    const h = compose(f, g);
+    const addOne = (n: number) => n + 1;
+    const double = (n: number) => n * 2;
+    const addOneThenDouble = compose(double, addOne);
 
     const expected = 42;
-    const acutal = h(20);
+    const acutal = addOneThenDouble(20);
 
     expect(acutal).toEqual(expected);
   });
