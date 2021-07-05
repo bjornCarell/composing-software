@@ -13,5 +13,5 @@ describe('summmingReducer function', () => {
     const actual = summingReducer(initialState, add20);
 
     expect(actual).toEqual(expected);
-  })
-})
+  });
+});

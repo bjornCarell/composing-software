@@ -32,4 +32,4 @@ export const summingReducer = (state = initialState, action: Action) => {
 }
 
 // Does TypeScript make the default return statement reduntant? 
-// We will never be able to call the summingReducer without parameters
+// We will never be able to call the summingReducer without parameters if typed as above
