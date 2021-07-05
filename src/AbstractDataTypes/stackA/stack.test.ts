@@ -41,5 +41,5 @@ describe('stack as encapsulated object with pure functions', () => {
     const acutal = pop(push(b, push(a, stackA())));
 
     expect(stringify(acutal)).toBe(stringify(expected));
-  });
+  });       
 });
