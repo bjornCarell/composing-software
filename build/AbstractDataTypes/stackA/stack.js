@@ -28,6 +28,3 @@ var push = function (item, stack) { return stack.push(item); };
 exports.push = push;
 var pop = function (stack) { return stack.pop(); };
 exports.pop = pop;
-var numberStack = exports.stackA(1, 2, 3);
-console.log(exports.push(4, numberStack));
-exports.pop(numberStack);
