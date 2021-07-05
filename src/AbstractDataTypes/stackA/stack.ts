@@ -1,7 +1,7 @@
 interface Stack<T> {
   push: (item: T) => Stack<T>;
   pop: () => (T[] | Stack<T>)[];
-  toString?: () => string;
+  toString: () => string;
 }
 
 export const stackA = <T>(...items: T[]):Stack<T> => ({
