@@ -1,6 +1,6 @@
 interface Stack<T> {
   push: (item: T) => Stack<T>;
-  pop: () => (T[] | Stack<T>)[];
+  pop: () => (T | Stack<T>)[];
   toString: () => string;
 }
 
@@ -8,7 +8,7 @@ export const stackA = <T>(...items: T[]):Stack<T> => ({
   push: (item: T) => stackA(...items, item),
   pop: () => {
     const newItems = [...items];
-    const item = newItems.splice(-1);
+    const [item] = newItems.splice(-1);
     return [item, stackA(...newItems)];
   },
   toString: () => `stack(${ items.join(',') })` || 'No stack'

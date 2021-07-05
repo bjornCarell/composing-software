@@ -17,7 +17,7 @@ var stackA = function () {
         push: function (item) { return exports.stackA.apply(void 0, __spreadArrays(items, [item])); },
         pop: function () {
             var newItems = __spreadArrays(items);
-            var item = newItems.splice(-1);
+            var item = newItems.splice(-1)[0];
             return [item, exports.stackA.apply(void 0, newItems)];
         },
         toString: function () { return "stack(" + items.join(',') + ")" || 'No stack'; }
