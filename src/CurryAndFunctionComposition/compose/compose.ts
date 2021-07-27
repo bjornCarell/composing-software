@@ -1,4 +1,4 @@
-export const compose = <T>(...fns: Function[]) => (x: T): T =>
+export const compose = <T>(...fns: ((arg: T) => T)[]) => (x: T): T =>
   fns.reduceRight((y, f) => f(y), x);
 
 
