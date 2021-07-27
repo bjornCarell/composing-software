@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.reduceArrays = void 0;
 var reduceArrays = function (reducer, initial, arr) {
     var acc = initial;
-    for (var i = 0, length_1 = arr.length; i < length_1; i++) {
+    for (var i = 0, length = arr.length; i < length; i++) {
         acc = reducer(acc, arr[i]);
     }
     return acc;

@@ -13,3 +13,4 @@ const h = composePromises(f, g);
 
 h(20).then(trace(label)); // Promise composition: 42
   
+// https://stackoverflow.com/questions/43881192/returning-a-promise-in-an-async-function-in-typescript
