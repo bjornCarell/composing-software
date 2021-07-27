@@ -1,0 +1,1 @@
+export const echo = (n: number) => (x: unknown) => Array.from({ length: n }).fill(x);
