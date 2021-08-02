@@ -10,3 +10,13 @@ describe('create user function', function () {
         expect(actual).toEqual(expected);
     });
 });
+describe('create user defaults function', function () {
+    it('should generate a user with default values', function () {
+        var expected = {
+            username: 'Anonymous',
+            avatar: 'anon.png',
+        };
+        var actual = createUser_1.createUserWithDefaults();
+        expect(actual).toEqual(expected);
+    });
+});

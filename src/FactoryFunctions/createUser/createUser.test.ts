@@ -1,4 +1,4 @@
-import { createUser } from './createUser';
+import { createUser, createUserWithDefaults } from './createUser';
 
 describe('create user function', () => {
   it('should set the name of a new user', () => {
@@ -11,3 +11,16 @@ describe('create user function', () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe('create user defaults function', () => {
+  it('should generate a user with default values', () => {
+    const expected = {
+      username: 'Anonymous',
+      avatar: 'anon.png',
+    };
+
+    const actual = createUserWithDefaults();
+
+    expect(actual).toEqual(expected);
+  })
+})

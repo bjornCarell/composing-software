@@ -18,3 +18,10 @@ export const createUser = ({ username, avatar }: UserInfo): UserObj => ({
   }
 });
 
+export const createUserWithDefaults = ({
+  username = 'Anonymous',
+  avatar = 'anon.png',
+} = {}): UserInfo => ({
+  username,
+  avatar,
+});
