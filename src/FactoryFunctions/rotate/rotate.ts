@@ -1,0 +1,1 @@
+export const rotate = ([first, ...rest]: number[]) => [...rest, first];
